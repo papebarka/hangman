@@ -1,7 +1,7 @@
 defmodule Dictionary do
 
   @word_list "assets/words.txt"
-  |> File.read
+  |> File.read!
   |> String.split(~r/\n/, trim: true)
 
   def random_word do
